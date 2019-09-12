@@ -1,0 +1,92 @@
+:root {
+	--green: rgba(154, 205, 50, 1);
+	--gray: #454242;
+	--red: #fc4a4a;
+	--bkg: #2c2929;
+}
+
+.slide {
+	background-color: var(--bkg);
+	color: #fff;
+}
+
+.slide h2 {
+	color: #fff;
+}
+
+#cover {
+	position: relative;
+	text-align: center;
+	color: #fff;
+	/*background: repeating-linear-gradient(*/
+	/*		transparent,transparent 20px, var(--gray) 22px*/
+	/*),*/
+	/*repeating-linear-gradient(*/
+	/*		90deg,*/
+	/*		transparent,transparent 20px, var(--gray) 22px*/
+	/*);*/
+	background: url("https://gdb.rferl.org/BA397428-D7A2-4E86-91C3-25A0091ECA0E_w1023_r1_s.jpg") no-repeat center 0 / 150%;
+}
+
+#cover:after {
+	content:"";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: -1;
+}
+
+#cover h2 {
+	color: var(--red);
+	font-size: 120px;
+	text-transform: uppercase;
+}
+
+#cover h3 {
+	display: inline-block;
+	position: relative;
+}
+
+#cover h3:after {
+	content: "";
+	display: block;
+	width: calc(100% + 20px);
+	height: 3px;
+	position: absolute;
+	top: 50%;
+	left: -10px;
+	right: -10px;
+	background: var(--red)
+}
+
+.slide ul {
+	list-style: none;
+}
+
+.slide ul > li::before {
+	content: "— ";
+}
+
+.content {
+	display: flex;
+	align-items: center;
+}
+
+.socials {
+	margin-left: 15%;
+	text-align: center;
+	font-size: 46px;
+}
+
+.userpic {
+	border-radius: 50%;
+	height: 250px;
+	width: 250px;
+}
+
+.username {
+	display: block;
+}
