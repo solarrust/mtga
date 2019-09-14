@@ -5,6 +5,12 @@
 	--bkg: #2c2929;
 }
 
+@import url('https://fonts.googleapis.com/css?family=PT+Mono&display=swap');
+
+body {
+	font-family: 'PT Mono', sans-serif, -apple-system;
+}
+
 .slide {
 	background-color: var(--bkg);
 	color: #fff;
@@ -14,17 +20,17 @@
 	color: #fff;
 }
 
+#cover, #last {
+	text-align: center;
+}
+
+#last {
+	display: flex;
+	align-items: center;
+}
+
 #cover {
 	position: relative;
-	text-align: center;
-	color: #fff;
-	/*background: repeating-linear-gradient(*/
-	/*		transparent,transparent 20px, var(--gray) 22px*/
-	/*),*/
-	/*repeating-linear-gradient(*/
-	/*		90deg,*/
-	/*		transparent,transparent 20px, var(--gray) 22px*/
-	/*);*/
 	background: url("https://gdb.rferl.org/BA397428-D7A2-4E86-91C3-25A0091ECA0E_w1023_r1_s.jpg") no-repeat center 0 / 150%;
 }
 
@@ -39,7 +45,8 @@
 	z-index: -1;
 }
 
-#cover h2 {
+#cover h2,
+#last h2 {
 	color: var(--red);
 	font-size: 120px;
 	text-transform: uppercase;
@@ -68,6 +75,15 @@
 
 .slide ul > li::before {
 	content: "— ";
+	color: #fff;
+}
+
+.slide ol > li::before {
+	color: #fff;
+}
+
+.slide pre code:not(:only-child)::before {
+	color: #fff;
 }
 
 .content {
@@ -76,7 +92,7 @@
 }
 
 .socials {
-	margin-left: 15%;
+	margin-left: 10%;
 	text-align: center;
 	font-size: 46px;
 }
@@ -89,4 +105,170 @@
 
 .username {
 	display: block;
+}
+
+.qr {
+	position: absolute;
+	bottom: 1%;
+	right: 1%;
+}
+
+.slide-link {
+	font-size: 70%;
+	color: #fff !important;
+}
+
+.content__smile {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 240px;
+}
+
+.content__smile img {
+	max-height: 50vh;
+}
+
+.title-slide {
+	display: flex;
+	align-items: center;
+	text-align: start;
+}
+
+.title {
+	position: relative;
+	padding: 25px 15px;
+	background-color: var(--gray);
+	border-radius: 20px;
+}
+
+.title:before {
+	content: "";
+	position: absolute;
+	z-index: 2;
+	bottom: -2px;
+	left: -7px;
+	height: 19px;
+	border-left: 20px solid var(--gray);
+	border-bottom-right-radius: 16px 14px;
+	-webkit-transform: translate(0, -2px);
+	transform: translate(0, -2px);
+	border-bottom-right-radius: 15px 0px\9;
+	transform: translate(-1px, -2px)\9;
+}
+
+.title:after {
+	content: "";
+	position: absolute;
+	z-index: 3;
+	bottom: -2px;
+	left: 4px;
+	width: 26px;
+	height: 20px;
+	background: var(--bkg);
+	border-bottom-right-radius: 10px;
+	-webkit-transform: translate(-30px, -2px);
+	transform: translate(-30px, -2px);
+}
+
+.answer {
+	position: relative;
+	text-align: right;
+	padding: 25px 15px;
+	background-color: #0e86fe;
+	border-radius: 20px;
+}
+
+.answer:before {
+	content: "";
+	position: absolute;
+	z-index: 1;
+	bottom: -2px;
+	right: -8px;
+	height: 19px;
+	border-right: 20px solid #0e86fe;
+	border-bottom-left-radius: 16px 14px;
+	-webkit-transform: translate(0, -2px);
+	transform: translate(0, -2px);
+	border-bottom-left-radius: 15px 0px\9;
+	transform: translate(-1px, -2px)\9;
+}
+
+.answer:after {
+	content: "";
+	position: absolute;
+	z-index: 1;
+	bottom: -2px;
+	right: -42px;
+	width: 12px;
+	height: 20px;
+	background: var(--bkg);
+	border-bottom-left-radius: 10px;
+	-webkit-transform: translate(-30px, -2px);
+	transform: translate(-30px, -2px)
+}
+
+.content-center {
+	text-align: center;
+}
+
+.bro td {
+	width: 50%;
+	padding: 15px;
+	text-align: center;
+	border-collapse: collapse;
+	border: 1px solid var(--gray);
+}
+
+.circle {
+	position: relative;
+	width: 60vw;
+	height: 0;
+	margin: 0 auto;
+	padding-bottom: 45%;
+}
+
+.circle .arrow {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+}
+
+.circle .arrow:first-of-type {
+	right: calc(50% - 100px);
+	top: 20px;
+	transform: rotate(70deg)
+}
+
+.circle .arrow:nth-of-type(2) {
+	right: 70px;
+	top: calc(50% + 30px);
+	transform: rotate(140deg)
+}
+
+.circle .arrow:last-of-type {
+	width: 200px;
+	height: 200px;
+	left: -40px;
+	top: 23%;
+	transform: rotate(270deg)
+}
+
+.circle .text {
+	position: absolute;
+}
+
+.circle .text:first-of-type {
+	top: 0;
+	left: 0;
+}
+
+.circle .text:nth-of-type(2) {
+	bottom: calc(50% - 10px);
+	right: 0;
+}
+
+.circle .text:last-of-type {
+	bottom: 0;
+	left: 0;
 }
