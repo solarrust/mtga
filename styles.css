@@ -69,6 +69,16 @@ body {
 	background: var(--red)
 }
 
+#links ul > li > a {
+	color: #fff;
+	text-decoration: none;
+	background-image: linear-gradient(
+			to top,
+			var(--red) 1px,
+			transparent 1px
+	);
+}
+
 .slide ul {
 	list-style: none;
 }
@@ -89,6 +99,7 @@ body {
 .content {
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
 }
 
 .socials {
