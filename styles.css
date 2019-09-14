@@ -142,8 +142,14 @@ body {
 
 .title-slide {
 	display: flex;
-	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
 	text-align: start;
+}
+
+.title-slide .answer {
+	align-self: flex-end;
 }
 
 .title {
@@ -282,4 +288,35 @@ body {
 .circle .text:last-of-type {
 	bottom: 0;
 	left: 0;
+}
+
+.jumping-dots span {
+	position: relative;
+	bottom: 0px;
+	-webkit-animation: jump 1500ms infinite;
+	animation: jump 2s infinite;
+}
+.jumping-dots .dot-1{
+	-webkit-animation-delay: 200ms;
+	animation-delay: 200ms;
+}
+.jumping-dots .dot-2{
+	-webkit-animation-delay: 400ms;
+	animation-delay: 400ms;
+}
+.jumping-dots .dot-3{
+	-webkit-animation-delay: 600ms;
+	animation-delay: 600ms;
+}
+
+@-webkit-keyframes jump {
+	0%   {bottom: 0px;}
+	20%  {bottom: 15px;}
+	40%  {bottom: 0px;}
+}
+
+@keyframes jump {
+	0%   {bottom: 0px;}
+	20%  {bottom: 15px;}
+	40%  {bottom: 0px;}
 }
