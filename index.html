@@ -11,6 +11,27 @@
         .shower {
             --slide-ratio: calc(16 / 9);
         }
+
+        .slide::after {
+          font-family: 'Bierahinia Lite', monospace;
+          background-color: var(--gray);
+          background-image: none;
+          padding-top: 0;
+          height: var(--ribbon-size);
+        }
+
+        .progress {
+          height: 5px;
+        }
+
+        .progress::before {
+          background: var(--red);
+          transform: none;
+        }
+
+        .slide code, .slide kbd, .slide samp {
+          background: rgba(255, 255, 255, 0.2);
+        }
     </style>
     <script src="https://kit.fontawesome.com/5454ec8d0a.js"></script>
 </head>
@@ -24,7 +45,7 @@
     <section class="slide" id="cover">
         <h3>Put your cards on the table</h3>
         <h2>Make tables great again </h2>
-        <p class="note">"Свобода, ведущая народ", Эжен Делакруа</p>
+        <p class="note">"Liberty Leading the People", Eugène Delacroix</p>
         <style>
             #cover h2 {
                 margin: 30px 0 0;
@@ -67,15 +88,15 @@
     <section class="slide">
         <h2>Theories</h2>
         <ul>
-            <li>"Do not use tables for layout. It’s bad practice"</li>
-            <li>"Designers do not use tables in templates"</li>
-            <li>"Tables are difficult to adapt for mobiles"</li>
+            <li class="next">"Do not use tables for layout. It’s bad practice"</li>
+            <li class="next">"Designers do not use tables in templates"</li>
+            <li class="next">"Tables are difficult to adapt for mobiles"</li>
         </ul>
     </section>
 
     <section class="title-slide slide">
         <h2 class="title">"Do not use tables for layout. It’s a bad practice"</h2>
-      <h2 class="answer">
+      <h2 class="answer next">
         <span class="jumping-dots">
           <span class="dot-1">.</span>
           <span class="dot-2">.</span>
@@ -92,7 +113,7 @@
     </section>
 
     <section class="slide">
-        <h2>Serious citations</h2>
+        <h2>Summary</h2>
         <table class="bro">
             <thead>
                 <tr>
@@ -102,8 +123,12 @@
             </thead>
             <tbody>
             <tr>
-                <td>Table for tabular data</td>
-                <td>Table for layout</td>
+                <td>
+                  <img src="./pictures/bro.jpg" alt="" style="max-width: 100%">
+                </td>
+                <td>
+                  <img src="./pictures/not-bro.jpeg" alt="" style="max-width: 100%">
+                </td>
             </tr>
             </tbody>
         </table>
@@ -111,7 +136,7 @@
 
     <section class="title-slide slide">
         <h2 class="title">"Designers do not use tables in templates"</h2>
-      <h2 class="answer">
+      <h2 class="answer next">
         <span class="jumping-dots">
           <span class="dot-1">.</span>
           <span class="dot-2">.</span>
@@ -130,17 +155,17 @@
     <section class="slide">
         <h2>Tabular data</h2>
         <ol>
-            <li>The data can be presented as rows and columns.</li>
-            <li>Each row has the same columns as the other rows, in the same order.</li>
-            <li>A given column has the same type, but different columns can have different types.</li>
-            <li>The rows are usually in some particular order.</li>
+            <li class="next">The data can be presented as rows and columns.</li>
+            <li class="next">Each row has the same columns as the other rows, in the same order.</li>
+            <li class="next">A given column has the same type, but different columns can have different types.</li>
+            <li class="next">The rows are usually in some particular order.</li>
         </ol>
     </section>
 
     <section class="title-slide slide">
         <h2 class="title">"Tables are difficult to adapt for mobiles"</h2>
 
-      <h2 class="answer">
+      <h2 class="answer next">
         <span class="jumping-dots">
           <span class="dot-1">.</span>
           <span class="dot-2">.</span>
@@ -150,33 +175,33 @@
     </section>
 
     <section class="slide" id="picture">
-        <h2>Horizontal scroll</h2>
-        <p class="codepen" data-height="400px" data-theme-id="dark" data-default-tab="result" data-user="solarrust" data-slug-hash="VwZyGxQ" style="height: 333px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Tables. Ex2. overflow">
+        <p class="codepen" data-height="500px" data-theme-id="dark" data-default-tab="result" data-user="solarrust" data-slug-hash="VwZyGxQ" style="height: 333px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Tables. Ex2. overflow">
   <span>See the Pen <a href="https://codepen.io/solarrust/pen/VwZyGxQ/">
   Tables. Ex2. overflow</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
         </p>
         <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+      <p class="note side">Horizontal scroll</p>
     </section>
 
     <section class="slide">
-        <h2>Cards are the new black</h2>
-        <p class="codepen" data-height="400px" data-theme-id="dark" data-default-tab="result" data-user="solarrust" data-slug-hash="pozpxzy" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Tables. Ex3. Flex">
+        <p class="codepen" data-height="500px" data-theme-id="dark" data-default-tab="result" data-user="solarrust" data-slug-hash="pozpxzy" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Tables. Ex3. Flex">
   <span>See the Pen <a href="https://codepen.io/solarrust/pen/pozpxzy/">
   Tables. Ex3. Flex</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
         </p>
         <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+      <p class="note side">Cards are the new black</p>
     </section>
 
     <section class="slide">
-        <h2>Signs for cells</h2>
-        <p class="codepen" data-height="400px" data-theme-id="dark" data-default-tab="result" data-user="solarrust" data-slug-hash="GRKyYWb" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Tables. Ex4. Flex + before">
+        <p class="codepen" data-height="500px" data-theme-id="dark" data-default-tab="result" data-user="solarrust" data-slug-hash="GRKyYWb" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Tables. Ex4. Flex + before">
   <span>See the Pen <a href="https://codepen.io/solarrust/pen/GRKyYWb/">
   Tables. Ex4. Flex + before</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
         </p>
         <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+      <p class="note side">Signs for cells</p>
     </section>
 
     <section class="slide">
@@ -194,7 +219,7 @@
     <section class="title-slide slide">
         <h2 class="title">"What about accessibility?"</h2>
 
-      <h2 class="answer">
+      <h2 class="answer next">
         <span class="jumping-dots">
           <span class="dot-1">.</span>
           <span class="dot-2">.</span>
@@ -224,7 +249,7 @@
     <section class="title-slide slide">
         <h2 class="title">"Why must I use table tag with all this tr-td stuff instead simple divs?"</h2>
 
-      <h2 class="answer">
+      <h2 class="answer next">
         <span class="jumping-dots">
           <span class="dot-1">.</span>
           <span class="dot-2">.</span>
@@ -245,26 +270,27 @@
 
 		<section class="slide">
 			<h2>Vicious circle</h2>
-			<div class="circle">
-				<div class="arrow">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="100%" height="100%">
-            <path fill="#fc4a4a" fill-rule="evenodd" d="M16 8l-6-5v3C5.5 6 2 7 0 12c3-2.5 6-3 10-2v3l6-5zm0 0"/>
-          </svg>
-        </div>
-				<span class="text">Developers avoid tables</span>
-				<div class="arrow">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="100%" height="100%">
-            <path fill="#fc4a4a" fill-rule="evenodd" d="M16 8l-6-5v3C5.5 6 2 7 0 12c3-2.5 6-3 10-2v3l6-5zm0 0"/>
-          </svg>
-        </div>
-				<span class="text">Working groups don't pay enough attention</span>
-				<div class="arrow">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="100%" height="100%">
-            <path fill="#fc4a4a" fill-rule="evenodd" d="M16 8l-6-5v3C5.5 6 2 7 0 12c3-2.5 6-3 10-2v3l6-5zm0 0"/>
-          </svg>
-        </div>
-				<span class="text">The standard of table layout staying in stagnation</span>
-			</div>
+      <span class="text">Developers avoid tables</span> <span class="next">--> Working groups don't pay enough attention</span><br> <span class="next">--> The standard of table layout staying in stagnation</span> <span class="text next">--> Developers avoid tables</span> <span class="next">--> Working groups don't pay enough attention</span><br> <span class="next">--> The standard of table layout staying in stagnation</span> <span class="text next">--> Developers avoid tables</span> <span class="next">--> Working groups don't pay enough attention</span><br> <span class="next">--> The standard of table layout staying in stagnation</span> <span class="text next">--> Developers avoid tables</span> <span class="next">--> Working groups don't pay enough attention</span><br> <span class="next">--> The standard of table layout staying in stagnation</span>
+<!--      <div class="circle">-->
+<!--				<div class="arrow">-->
+<!--          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="100%" height="100%">-->
+<!--            <path fill="#fc4a4a" fill-rule="evenodd" d="M16 8l-6-5v3C5.5 6 2 7 0 12c3-2.5 6-3 10-2v3l6-5zm0 0"/>-->
+<!--          </svg>-->
+<!--        </div>-->
+<!--				<span class="text">Developers avoid tables</span>-->
+<!--				<div class="arrow">-->
+<!--          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="100%" height="100%">-->
+<!--            <path fill="#fc4a4a" fill-rule="evenodd" d="M16 8l-6-5v3C5.5 6 2 7 0 12c3-2.5 6-3 10-2v3l6-5zm0 0"/>-->
+<!--          </svg>-->
+<!--        </div>-->
+<!--				<span class="text">Working groups don't pay enough attention</span>-->
+<!--				<div class="arrow">-->
+<!--          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="100%" height="100%">-->
+<!--            <path fill="#fc4a4a" fill-rule="evenodd" d="M16 8l-6-5v3C5.5 6 2 7 0 12c3-2.5 6-3 10-2v3l6-5zm0 0"/>-->
+<!--          </svg>-->
+<!--        </div>-->
+<!--				<span class="text">The standard of table layout staying in stagnation</span>-->
+<!--			</div>-->
 		</section>
 
     <section class="slide" id="last">
@@ -286,6 +312,19 @@
 
     <section class="slide">
       <h2 class="shout">Thank you!</h2>
+    </section>
+    
+    <section class="slide">
+      <h2>Alena Batitskaya</h2>
+      <div class="content">
+        <img src="./pictures/userpic.jpg" alt="" class="userpic">
+        <div class="socials">
+          <i class="fab fa-twitter"></i> <i class="fab fa-telegram-plane"></i> <i class="fab fa-medium"></i>
+          <span class="username">@ABatickaya</span>
+          <a class="slide-link" href="http://bit.ly/mtga-slides">bit.ly/mtga-slides</a>
+        </div>
+        <img src="./pictures/qr.svg" alt="" class="qr">
+      </div>
     </section>
 
     <div class="progress"></div>

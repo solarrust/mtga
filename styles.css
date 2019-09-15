@@ -7,6 +7,14 @@
 
 @import url('https://fonts.googleapis.com/css?family=PT+Mono&display=swap');
 
+@font-face{
+	font-family:'Bierahinia Lite';
+	src:url(bierahinia-lite.ttf) format('truetype');
+	font-style:normal;
+	font-weight:400;
+	font-display:swap
+}
+
 body {
 	font-family: 'PT Mono', sans-serif, -apple-system;
 }
@@ -307,6 +315,16 @@ body {
 .jumping-dots .dot-3{
 	-webkit-animation-delay: 600ms;
 	animation-delay: 600ms;
+}
+
+.note.side {
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 100%;
+	display: flex;
+	justify-content:center;
+	writing-mode: vertical-rl;
 }
 
 @-webkit-keyframes jump {
