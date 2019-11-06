@@ -1,8 +1,8 @@
 :root {
 	--green: rgba(154, 205, 50, 1);
 	--gray: #454242;
-	--red: #fc4a4a;
-	--bkg: #2c2929;
+	--red: #4eb980;
+	--bkg: #323232;
 }
 
 @import url('https://fonts.googleapis.com/css?family=PT+Mono&display=swap');

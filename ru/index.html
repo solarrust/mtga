@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Make tables great again</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../pictures/favicon.ico" />
+    <link rel="stylesheet" href="../shower/themes/ribbon/styles/styles.css">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        html, body {
+          font-family: 'Times', serif, -apple-system !important;
+        }
+        .shower {
+            --slide-ratio: calc(16 / 9);
+        }
+
+        .slide h2 {
+          font-family: 'Times', serif, -apple-system;
+        }
+
+        .slide::after {
+          background-color: var(--gray);
+          background-image: none;
+          padding-top: 0;
+          height: var(--ribbon-size);
+        }
+
+        .progress {
+          height: 5px;
+        }
+
+        .progress::before {
+          background: var(--red);
+          transform: none;
+        }
+
+        .slide code, .slide kbd, .slide samp {
+          background: rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body class="shower list">
+
+    <header class="caption">
+        <h1>Make tables great again</h1>
+        <p>Специально для конференции FrontHub, Воронеж, 23.11.2019</p>
+    </header>
+
+    <section class="slide" id="cover">
+        <h3>Put your cards on the table</h3>
+        <h2>Make tables great again </h2>
+        <p class="note">«Свобода, ведущая народ», Эжен Делакруа</p>
+        <style>
+          #cover h2, #last h2 {
+            font-size: 100px;
+          }
+            #cover h2 {
+                margin: 30px 0 0;
+                text-align: center;
+            }
+
+            #cover p {
+                margin: 10px 0 0;
+                text-align: center;
+                color: white;
+                font-style: italic;
+                font-size: 20px;
+            }
+
+            #cover p a {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2>Алёна Батицкая</h2>
+        <div class="content">
+            <img src="../pictures/userpic.jpg" alt="" class="userpic">
+            <div class="socials">
+                <i class="fab fa-twitter"></i> <i class="fab fa-telegram-plane"></i> <i class="fab fa-medium"></i>
+                <span class="username">@ABatickaya</span>
+                <a class="slide-link" href="http://bit.ly/mtga-slides">bit.ly/RU-mtga</a>
+            </div>
+            <img src="../pictures/qr-code.svg" alt="" class="qr" style="width: 250px; height: 250px">
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="content__smile">
+            <img src="http://www.setsubset.com/wp-content/uploads/2012/08/no-tables-554x600.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Теории</h2>
+        <ul>
+            <li class="next">«Не использую таблицы, потому что это прошлый век и плохая практика»</li>
+            <li class="next">«Дизайнеры не рисуют таблицы в макетах»</li>
+            <li class="next">«Таблицы сложно верстать адаптивно»</li>
+        </ul>
+    </section>
+
+    <section class="title-slide slide">
+        <h2 class="title">«Не использую таблицы, потому что это прошлый век и плохая практика»</h2>
+      <h2 class="answer next">
+        <span class="jumping-dots">
+          <span class="dot-1">.</span>
+          <span class="dot-2">.</span>
+          <span class="dot-3">.</span>
+        </span>
+      </h2>
+    </section>
+
+    <section class="slide">
+        <h2>ТАБЛИЦЫ === ЗЛО</h2>
+        <div class="content-center">
+        <img class="center" src="../pictures/Krang.png" alt="">
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Итог</h2>
+        <table class="bro">
+            <thead>
+                <tr>
+                    <td>Бро</td>
+                    <td>Не Бро</td>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                  <img src="../pictures/bro.jpg" alt="" style="max-width: 100%">
+                </td>
+                <td>
+                  <img src="../pictures/not-bro.jpeg" alt="" style="max-width: 100%">
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="title-slide slide">
+        <h2 class="title">«Дизайнеры не рисуют таблицы в макетах»</h2>
+      <h2 class="answer next">
+        <span class="jumping-dots">
+          <span class="dot-1">.</span>
+          <span class="dot-2">.</span>
+          <span class="dot-3">.</span>
+        </span>
+      </h2>
+    </section>
+
+    <section class="slide">
+        <h2>Когда я должен использовать таблицы?</h2>
+        <blockquote>
+          Таблицы может использоваться для представления табличных отношений между данными.
+        </blockquote>
+    </section>
+
+    <section class="slide">
+        <h2>Табличные данные</h2>
+        <ol>
+            <li class="next">Данные состоят из строк и колонок.</li>
+            <li class="next">Каждый ряд содержит те же колонки в том же порядке, что и остальные ряды.</li>
+            <li class="next">В одной колонке представлены данные одного типа, но в разных колонках могут быть разные типы данных.</li>
+            <li class="next">Ряды обычно расположены в каком-то определённом порядке.</li>
+        </ol>
+    </section>
+
+    <section class="title-slide slide">
+        <h2 class="title">«Таблицы сложно верстать адаптивно»</h2>
+
+      <h2 class="answer next">
+        <span class="jumping-dots">
+          <span class="dot-1">.</span>
+          <span class="dot-2">.</span>
+          <span class="dot-3">.</span>
+        </span>
+      </h2>
+    </section>
+
+    <section class="slide" id="picture">
+        <p class="codepen" data-height="500px" data-theme-id="dark" data-default-tab="result" data-user="solarrust" data-slug-hash="VwZyGxQ" style="height: 333px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Tables. Ex2. overflow">
+  <span>See the Pen <a href="https://codepen.io/solarrust/pen/VwZyGxQ/">
+  Tables. Ex2. overflow</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+      <p class="note side">Горизонтальный скролл</p>
+    </section>
+
+    <section class="slide">
+        <p class="codepen" data-height="500px" data-theme-id="dark" data-default-tab="result" data-user="solarrust" data-slug-hash="pozpxzy" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Tables. Ex3. Flex">
+  <span>See the Pen <a href="https://codepen.io/solarrust/pen/pozpxzy/">
+  Tables. Ex3. Flex</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+      <p class="note side">Карточки — новый чёрный</p>
+    </section>
+
+    <section class="slide">
+        <p class="codepen" data-height="500px" data-theme-id="dark" data-default-tab="result" data-user="solarrust" data-slug-hash="GRKyYWb" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Tables. Ex4. Flex + before">
+  <span>See the Pen <a href="https://codepen.io/solarrust/pen/GRKyYWb/">
+  Tables. Ex4. Flex + before</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+      <p class="note side">Подписи для ячеек</p>
+    </section>
+
+    <section class="slide">
+        <h2>Трюк</h2>
+        <p>Не используйте <code>display: none</code></p>
+        <pre>
+            <code>thead {</code>
+            <code>	position: absolute;</code>
+            <code>	top: -9999px;</code>
+            <code>	left: -9999px;</code>
+            <code>}</code>
+        </pre>
+    </section>
+
+    <section class="title-slide slide">
+        <h2 class="title">«Что там с доступностью?»</h2>
+
+      <h2 class="answer next">
+        <span class="jumping-dots">
+          <span class="dot-1">.</span>
+          <span class="dot-2">.</span>
+          <span class="dot-3">.</span>
+        </span>
+      </h2>
+    </section>
+
+    <section class="slide">
+      <h2>Клавиши VO</h2>
+      <p><kbd>Tab</kbd> для навигации по интерактивным элементам.</p>
+      <p><kbd>Клавиши VO</kbd> + <kbd>← ↑ ↓ →</kbd> для навигации по простому тексту или таблицам, расположенным на странице.</p>
+      <p><kbd>Клавиши VO</kbd> по умолчанию равны <kbd>Ctrl</kbd> + <kbd>Option</kbd>.</p>
+    </section>
+
+    <section class="slide">
+      <video src="../pictures/a11y-1.mp4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain" controls></video>
+    </section>
+
+    <section class="slide">
+      <video src="../pictures/A11y-2.mp4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain" controls></video>
+    </section>
+
+    <section class="slide">
+      <h2>Добавляйте <code>role</code></h2>
+      <pre>
+        <code>&lt;table></code>
+        <code>  &lt;thead <mark>role="rowgroup"</mark>></code>
+        <code>    &lt;tr <mark>role="row"</mark>></code>
+        <code>      &lt;th <mark>role="columnheader"</mark>>Имя&lt;/th></code>
+        <code>      ...</code>
+        <code>  &lt;/thead></code>
+        <code>&lt;/table></code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <video src="../pictures/A11y-3.mp4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain" controls></video>
+    </section>
+
+    <section class="slide">
+        <h2>Атрибут <code>role</code> 🦸‍♂️</h2>
+        <ul>
+            <li><code>&lt;table></code> — <code>table</code></li>
+            <li><code>&lt;thead> / &lt;tbody> / &lt;tfoot></code> — <code>rowgroup</code></li>
+            <li><code>&lt;tr></code> — <code>row</code></li>
+            <li><code>&lt;td></code> — <code>cell</code></li>
+            <li>Заголовки сверху — <code>columnheader</code> для каждого</li>
+            <li>Заголовки сбоку — <code>rowheader</code> для каждого</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+      <h2><code>scope</code></h2>
+      <div class="content-center">
+        <img src="../pictures/scope.png" alt="" style="max-width: 95%;" />
+      </div>
+    </section>
+
+    <section class="slide">
+        <h2>Только необходимые данные</h2>
+        <p>Поговорите с заказчиком / дизайнером и выясните, все лиданные нужна для пользователя с мобильным телефоном?</p>
+        <p>Спрячте ненужные колонки, но не забудьте про <code>aria-hidden="true"</code></p>
+    </section>
+
+    <section class="title-slide slide">
+        <h2 class="title">«Почему мы должны заморачиваться за всю эту tr-td чепуху и не можем всё верстать на простых дивах?»</h2>
+
+      <h2 class="answer next">
+        <span class="jumping-dots">
+          <span class="dot-1">.</span>
+          <span class="dot-2">.</span>
+          <span class="dot-3">.</span>
+        </span>
+      </h2>
+    </section>
+
+    <section class="title-slide slide">
+        <h2 class="answer">«Почему вообще мы должны использовать все эти семантические теги вместо дивов?»</h2>
+    </section>
+
+    <section class="slide">
+      <p class="codepen" data-height="500px" data-theme-id="dark" data-default-tab="html" data-user="solarrust" data-slug-hash="rNBqwQe" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Tables. Not table">
+  <span>See the Pen <a href="https://codepen.io/solarrust/pen/rNBqwQe/">
+  Tables. Not table</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+      <p class="note side">Эксперимент</p>
+    </section>
+
+    <section class="slide">
+      <video src="../pictures/A11y-4.mp4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain" controls></video>
+    </section>
+
+    <section class="slide">
+      <h2>Таблицы + React = 💔</h2>
+      <div class="content-center">
+        <img class="center" src="../pictures/react.png" alt="" style="max-width: 100%;">
+      </div>
+    </section>
+
+    <section class="slide">
+      <h2>react-rainbow-components = 💞</h2>
+      <div class="content-center">
+        <a href="https://react-rainbow.web.app/#/Table">react-rainbow-components</a>
+        <img class="center" src="../pictures/react-table.png" alt="" style="max-width: 100%;">
+      </div>
+    </section>
+
+		<section class="slide">
+			<h2>Infinite loop</h2>
+      <pre>
+        <code>while (true) {</code>
+        <code>  console.log(«Разработчики избегают таблиц»);</code>
+        <code>  console.log(«Рабочие группы не уделяют им достаточно внимания»);</code>
+        <code>  console.log(«Стандарт не развивается»);</code>
+        <code>}</code>
+      </pre>
+		</section>
+
+    <section class="slide">
+      <div class="content-center">
+        <img class="center" src="https://i.ytimg.com/vi/axRkt5ykXqQ/maxresdefault.jpg" alt="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain">
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="content-center">
+        <img class="center" src="../pictures/meme.jpg" alt="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain">
+      </div>
+    </section>
+
+    <section class="slide" id="links">
+      <h2>Ссылки</h2>
+      <ul>
+        <li><a href="http://adrianroselli.com/2018/02/tables-css-display-properties-and-aria.html">Таблицы, CSS-свойства <code>display</code> и <code>ARIA</code></a></li>
+        <li><a href="https://medium.com/@snowleo208/how-to-create-responsive-table-d1662cb62075">Как создать отзывчивые таблицы в современном стиле</a></li>
+        <li><a href="https://a11yproject.com/posts/accessible-data-tables/">How-to: Создаём доступные таблицы данных</a></li>
+        <li><a href="https://css-tricks.com/responsive-data-tables/">Адаптивные таблицы</a></li>
+        <li><a href="https://github.com/filamentgroup/tablesaw">Tablesaw: набор плагинов для отзывчивых таблиц.</a></li>
+        <li><a href="https://www.w3.org/WAI/tutorials/tables/">Web Accessibility Tutorials: Tables Concepts</a></li>
+        <li><a href="https://html.spec.whatwg.org/multipage/tables.html">WHATWG HTML living standard: tables</a></li>
+      </ul>
+    </section>
+
+    <section class="slide" id="last">
+      <h2>Make tables great again</h2>
+    </section>
+    
+    <section class="slide">
+      <h2 class="shout">Спасибо!</h2>
+    </section>
+
+    <section class="slide">
+      <h2>Алёна Батицкая</h2>
+      <div class="content">
+        <img src="../pictures/userpic.jpg" alt="" class="userpic">
+        <div class="socials">
+          <i class="fab fa-twitter"></i> <i class="fab fa-telegram-plane"></i> <i class="fab fa-medium"></i>
+          <span class="username">@ABatickaya</span>
+          <a class="slide-link" href="http://bit.ly/mtga-slides">http://bit.ly/RU-mtga</a>
+        </div>
+        <img src="../pictures/qr-code.svg" alt="" class="qr" style="width: 250px; height: 250px">
+      </div>
+    </section>
+
+    <div class="progress"></div>
+
+    <script src="../shower/shower.min.js"></script>
+</body>
+</html>
