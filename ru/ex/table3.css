@@ -1,0 +1,102 @@
+body {
+	font-family: "PT Mono", monospace, sans-serif;
+	/*background-color: rgba(44,41,41, 1);*/
+	color: white;
+	font-size: 120%;
+}
+
+.wrapper {
+	max-width: 1280px;
+	width: 100%;
+	margin: 50px auto;
+	transition: width 0.5s linear;
+}
+
+.wrapper._small {
+	width: 320px;
+}
+
+._small table {
+	font-size: 70%;
+}
+
+._small thead {
+	/* NOT display: none for screen readers */
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}
+
+._small tr {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+._small tr:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+h2 {
+	text-align: center;
+	cursor: pointer;
+	user-select: none;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+td, th {
+	padding: 10px;
+	border: 1px solid #454242;
+}
+
+th {
+	text-transform: uppercase;
+}
+
+tr > td:nth-child(2):not(:last-child) {
+	color: #4eb980;
+}
+
+._small tr:nth-child(odd) {
+	border: 1px solid #4eb980;
+}
+
+._small td {
+	position: relative;
+	padding-left: 45%;
+	text-align: end;
+}
+
+td:before {
+	content: "";
+	box-sizing: border-box;
+	width: 45%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 10px;
+	text-align: start;
+	white-space: nowrap;
+}
+
+._small td:nth-child(1):before {
+	content: "Фамилия";
+}
+._small td:nth-child(2):before {
+	content: "Имя";
+}
+._small td:nth-child(3):before {
+	content: "Род занятий";
+}
+._small td:nth-child(4):before {
+	content: "Любимый цвет";
+}
+._small td:nth-child(5):before {
+	content: "Город";
+}
+

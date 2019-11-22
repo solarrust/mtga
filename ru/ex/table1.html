@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="table1.css">
+	<title>Таблица №1: горизонтальный скролл</title>
+</head>
+<body>
+<h2 data-width>FrontHub: расписание</h2>
+<div class="wrapper">
+	<table>
+		<thead role="rowgroup">
+		<tr role="row">
+			<th role="columnheader">Время</th>
+			<th role="columnheader">Спикер</th>
+			<th role="columnheader">Тема</th>
+		</tr>
+		</thead>
+		<tbody role="rowgroup">
+		<tr role="row">
+			<td role="cell">10:00</td>
+			<td colspan="2" role="cell">Начало</td>
+		</tr>
+		<tr role="row">
+			<td role="cell">11:00</td>
+			<td role="cell">Денис Ежков</td>
+			<td role="cell">Svelte - уже можно или еще рано?</td>
+		</tr>
+		<tr role="row">
+			<td role="cell">11:40</td>
+			<td role="cell">Андрей Фатюк</td>
+			<td role="cell">Тестирование скриншотами</td>
+		</tr>
+		<tr role="row">
+			<td role="cell">12:20</td>
+			<td colspan="2" role="cell">Coffee-break</td>
+		</tr>
+		<tr role="row">
+			<td role="cell">12:40</td>
+			<td role="cell">Дмитрий Ивко</td>
+			<td role="cell">Оптимизация или как не выстрелить себе в ногу</td>
+		</tr>
+		<tr role="row">
+			<td role="cell">13:20</td>
+			<td role="cell">Алёна Батицкая</td>
+			<td role="cell">Put your cards on a table</td>
+		</tr>
+		<tr role="row">
+			<td role="cell">14:00</td>
+			<td colspan="2" role="cell">ОБЕД</td>
+		</tr>
+		<tr role="row">
+			<td role="cell">15:00</td>
+			<td role="cell">Андрей Воронин</td>
+			<td role="cell">Your first VS Code extension</td>
+		</tr>
+		<tr role="row">
+			<td role="cell">15:40</td>
+			<td role="cell">Костя Молчанов</td>
+			<td role="cell">Exotic SPA: фронтенд на ЯП, о котором вы не слышали</td>
+		</tr>
+		<tr role="row">
+			<td role="cell">16:20</td>
+			<td colspan="2" role="cell">Coffee-break</td>
+		</tr>
+		<tr role="row">
+			<td role="cell">16:40</td>
+			<td role="cell">Евгений Дементьев</td>
+			<td role="cell">GraphQL больше не нужен: так ли это?</td>
+		</tr>
+		<tr role="row">
+			<td role="cell">17:20</td>
+			<td role="cell">Денис Ермаков</td>
+			<td role="cell">Срам, скрамно, и ещё 8 способов убить команду</td>
+		</tr>
+		</tbody>
+	</table>
+</div>
+<script src="table.js"></script>
+</body>
+</html>

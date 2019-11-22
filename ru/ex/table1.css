@@ -1,0 +1,56 @@
+body {
+	font-family: "PT Mono", monospace, sans-serif;
+	/*background-color: rgba(44,41,41, 1);*/
+	color: white;
+	font-size: 120%;
+}
+
+.wrapper {
+	max-width: 780px;
+	width: 100%;
+	margin: 50px auto;
+	border: 1px solid #4eb980;
+	transition: width 0.5s linear;
+	overflow: auto;
+}
+
+.wrapper._small {
+	width: 320px;
+}
+
+._small table {
+	min-width: 780px;
+}
+
+h2 {
+	text-align: center;
+	cursor: pointer;
+	user-select: none;
+}
+
+table {
+	width: 780px;
+	border-collapse: collapse;
+}
+
+td, th {
+	padding: 10px;
+	border: 1px solid #454242;
+}
+
+th {
+	text-transform: uppercase;
+}
+
+tr > td:nth-child(2):not(:last-child) {
+	color: #4eb980;
+}
+
+tr > td:last-child {
+	color: #9c9292;
+}
+
+td[colspan="2"] {
+	text-align: center;
+	text-transform: uppercase;
+}

@@ -1,0 +1,54 @@
+.table {
+	display: table;
+}
+
+.table-head, .table-body-row {
+	display: table-row;
+}
+
+.table-head__row, .table-body__row {
+	display: table-row;
+}
+
+.table-head__item, .table-body__cell {
+	display: table-cell;
+}
+
+.table-head__item {
+	text-align: center;
+}
+
+body {
+	font-family: "PT Mono", monospace, sans-serif;
+	background-color: rgba(44,41,41, 1);
+	color: white;
+	font-size: 120%;
+}
+
+.wrapper {
+	max-width: 1280px;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin: 50px auto;
+	transition: width 1s linear;
+}
+
+h2 {
+	text-align: center;
+	cursor: pointer;
+}
+
+.table {
+	border-collapse: collapse;
+}
+
+.table-head__item, .table-body__cell {
+	width: 330px;
+	padding: 10px;
+	border: 1px solid #454242;
+}
+
+.table-head__item {
+	text-transform: uppercase;
+}
